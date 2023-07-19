@@ -30,20 +30,7 @@ liItem.appendChild(image);
 
 // add all images
 const galImages = images.map((img) => 
-`<li>${img}</li>`).join("");
+`<li><img src="${img.url} alt="${img.alt}"> </li>`).join("");
 liItem.insertAdjacentHTML("beforeend", galImages);
 console.log(galImages)
 
-
-
-// for(let i = 0; i < images.length; i++) {
-//   let newImg = document.createElement("img");
-//   newImg.setAttribute("alt", images[i].alt);
-//   newImg.src = images[i].url;
-
-//   let liItem = document.createElement("li")
-//   liItem.appendChild(newImg)
-
-//   document.getElementsByClassName('.gallery').appendChild(liItem)
-//   console.log(liItem)
-// }
