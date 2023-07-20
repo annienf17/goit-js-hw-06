@@ -20,7 +20,7 @@ const image = document.createElement("img");
 // add all images
 const galImages = images.map((img) => 
 // create img in li from array images
-`<li><img src="${img.url} alt="${img.alt}"></li>`).join("")
+`<li><img src=${img.url} alt="${img.alt}"></li>`).join("");
 // add above between <ul></ul>
 gallery.insertAdjacentHTML("afterbegin", galImages);
 
