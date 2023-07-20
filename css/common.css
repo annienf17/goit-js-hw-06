@@ -22,3 +22,25 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* task 3 flex box gallery */
+.gallery {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+.gallery li {
+  list-style: none;
+  width: 350px;
+  height: auto;
+}
+.gallery li img {
+  max-width: 100%;
+  height: auto;
+  gap: 10px;
+}

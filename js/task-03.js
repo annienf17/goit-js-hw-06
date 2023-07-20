@@ -17,15 +17,11 @@ const images = [
 const gallery = document.querySelector(".gallery");
 // create img element
 const image = document.createElement("img");
-
-
-
 // add all images
 const galImages = images.map((img) => 
-`<li><img src="${img.url} alt="${img.alt}"></li>`).join("");
-// create li element
-const liItem = document.createElement("li");
-gallery.append(liItem)
-liItem.insertAdjacentHTML("beforeend", galImages);
-console.log(galImages)
+// create img in li from array images
+`<li><img src="${img.url} alt="${img.alt}"></li>`).join("")
+// add above between <ul></ul>
+gallery.insertAdjacentHTML("afterbegin", galImages);
+
 
