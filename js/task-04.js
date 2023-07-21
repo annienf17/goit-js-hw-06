@@ -18,7 +18,7 @@ const handleClickIncr = () => {
 // assign to HTML value counterValue
     value.innerHTML = counterValue;    
 };
-// callback function
+// callback function 
 decrementButton.addEventListener("click", handleClickDecr);
 incrementButton.addEventListener("click", handleClickIncr);
 
