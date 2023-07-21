@@ -38,9 +38,9 @@ button {
   list-style: none;
   width: 350px;
   height: auto;
+  gap: 10px;
 }
 .gallery li img {
   max-width: 100%;
   height: auto;
-  gap: 10px;
 }
