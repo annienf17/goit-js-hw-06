@@ -1,9 +1,13 @@
 'use strict'
 // selelct elements by id
 const textInput = document.getElementById("name-input");
-const textOutput = document.getElementById("name-output");
+const output = document.getElementById("name-output");
+console.log(output.innerHTML.length);
+console.log(output.innerHTML);
 
-// add event listener
-textInput.addEventListener("input", (event) => {
-    textOutput.textContent = event.currentTarget.value;
-})
+// when input written
+const handleInputText = (event) => {
+output.innerHTML = event.currentTarget.value;  
+};
+textInput.addEventListener("input", handleInputText);
+
