@@ -11,7 +11,7 @@ const handleInputText = (event) => {
      if(textInput.value.length > 0) {
         output.innerHTML = event.currentTarget.value;
     } else if(textInput.value.length < 1) {
-        output.innerHTML = output.value;     
+        output.innerHTML = "Anonymous";     
     }
 };
 textInput.addEventListener("input", handleInputText);
