@@ -20,7 +20,7 @@ const boxes = document.getElementById("boxes");
 const inputField = document.querySelector("input");
 amount = inputField.value;
 // create div 
-for (let i = 0; i < amount; ++i){
+for (let i = 0; i < amount; i++){
   const div = document.createElement("div");
 let divW = div.style.width = `${size}px`;
 let divH = div.style.height = `${size}px`;
@@ -36,7 +36,7 @@ function destroyBoxes() {
   const list = document.getElementById("boxes");
   while (list.hasChildNodes()) {
     list.removeChild(list.firstChild);
-   
+   size = 30;
   }};
 
 // call event by click on button
