@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 // select form .login-form
 const form = document.querySelector(".login-form");
 
@@ -13,7 +13,6 @@ const {
 if (email.value === "" || password.value === "") {
     return alert("All fields should be filled");
 }
-
 // print values of email and password to the console
 console.log(`Email: ${email.value}, Password: ${password.value}`);
 

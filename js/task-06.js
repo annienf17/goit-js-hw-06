@@ -3,10 +3,10 @@
 const textInput = document.querySelector("#validation-input");
 
 const handleText = () => {
-    if(textInput.value.length !== 6){
+    if(textInput.value.length <= 6){
        textInput.classList.add('invalid') 
 
-    } else if (textInput.value.length === 6) {
+    } else if (textInput.value.length > 6) {
         textInput.classList.remove('invalid')
         textInput.classList.add('valid')
     }
